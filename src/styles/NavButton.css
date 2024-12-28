@@ -1,0 +1,15 @@
+.navButton{
+    display: inline-block;
+    padding: 10px 16px;
+    font-size: 18px;
+    background-color: var(--background-color); 
+    a{
+        text-decoration: none;
+        color: var(--text-color);
+    }
+}
+
+.navButton:hover{
+    background-color: var(--secound-background-color);
+    transition: all 0.15s ease-in-out;
+}

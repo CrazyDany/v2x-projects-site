@@ -1,0 +1,19 @@
+html[data-theme="dark"] {
+    --background-color: rgb(35,39,47);
+    --text-color: rgb(246,247,249);
+    --active-text-color: rgb(87,194,219);
+    --secound-text-color: rgb(153,161,179);
+    --secound-background-color: rgb(52,58,70);
+    --active-background-color: rgb(40,53,65);
+    --dark-background-color: rgb(22,24,29);
+}
+
+html[data-theme="light"] {
+    --background-color: rgb(255,255,255);
+    --text-color: rgb(35,39,47);
+    --active-text-color: rgb(12,128,166);
+    --secound-text-color: rgb(156,164,181);
+    --secound-background-color: rgb(246,247,249);
+    --active-background-color: rgb(230,247,255);
+    --dark-background-color: rgb(255,255,255);
+}
