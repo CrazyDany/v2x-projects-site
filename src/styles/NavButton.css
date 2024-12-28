@@ -1,15 +1,27 @@
 .navButton{
     display: inline-block;
     padding: 10px 16px;
+    margin: 0 5px;
     font-size: 18px;
     background-color: var(--background-color); 
+    transition: all 0.15s ease-in-out;
     a{
         text-decoration: none;
         color: var(--text-color);
+        transition: all 0.15s ease-in-out;
     }
 }
 
 .navButton:hover{
     background-color: var(--secound-background-color);
     transition: all 0.15s ease-in-out;
+}
+
+.navButton.active{
+    background-color: var(--active-background-color);
+    transition: all 0.15s ease-in-out;
+    a{
+        color: var(--active-text-color);
+        transition: all 0.15s ease-in-out;
+    }
 }
