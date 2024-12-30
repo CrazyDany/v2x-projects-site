@@ -1,0 +1,25 @@
+section.textBlock {
+    p{
+        font-family: var(--font);
+        color: var(--text-color);
+        font-size: 22px;
+        max-width: 80%;
+        text-align: justify;
+        line-height: 115%;
+        transition: all 0.15s ease-in-out;
+    }
+    h1{
+        font-family: var(--font);
+        color: var(--text-color);
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+        transition: all 0.15s ease-in-out;
+        padding: 20px 10px;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+}

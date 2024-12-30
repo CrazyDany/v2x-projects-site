@@ -1,8 +1,8 @@
 import '../styles/NavBar.css'
 export default function NavBar({children}){
     return (
-        <div className="navBar">
+        <nav className="navBar">
             {children}
-        </div>
+        </nav>
     );
 }

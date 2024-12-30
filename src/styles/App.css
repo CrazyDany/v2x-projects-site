@@ -2,7 +2,7 @@
     background-color: var(--background-color);
     transition: all 0.15s ease-in-out;
 }
-body{
+html, body{
     background-color: var(--background-color);
     transition: all 0.15s ease-in-out;
 }

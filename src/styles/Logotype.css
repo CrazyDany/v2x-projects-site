@@ -1,12 +1,14 @@
 .logotype{
     padding: 10px 10px;
     h1{
+        font-family: var(--font);
         color: var(--text-color);
         transition: all 0.15s ease-in-out;
         display: inline-block;
         font-size: 32px;
     }
     h3{
+        font-family: var(--font);
         color: var(--secound-text-color);
         transition: all 0.15s ease-in-out;
         display: inline-block;

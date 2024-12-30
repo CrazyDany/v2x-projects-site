@@ -6,6 +6,7 @@
     background-color: var(--background-color); 
     transition: all 0.15s ease-in-out;
     a{
+        font-family: var(--font);
         text-decoration: none;
         color: var(--text-color);
         transition: all 0.15s ease-in-out;
@@ -21,6 +22,7 @@
     background-color: var(--active-background-color);
     transition: all 0.15s ease-in-out;
     a{
+        font-family: var(--font);
         color: var(--active-text-color);
         transition: all 0.15s ease-in-out;
     }

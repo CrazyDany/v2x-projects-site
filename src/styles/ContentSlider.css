@@ -1,0 +1,149 @@
+.sliderContentItem {
+    width: 100%; /* Используйте 100% ширины для адаптивности */
+    max-width: 480px; /* Максимальная ширина для больших экранов */
+    height: auto; /* Автоматическая высота */
+    margin: 10px;
+    background-color: var(--active-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.15s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 10px 0px;
+    padding: 10px;
+}
+
+.testContent0, .testContent1, .testContent2 {
+    text-align: center;
+    font-family: var(--font);
+    color: var(--secound-text-color);
+    font-size: 1rem; /* Используйте rem для адаптивности */
+    font-weight: bold;
+    transition: all 0.15s ease-in-out;
+}
+
+.sliderCheck {
+    width: 6px;
+    height: 6px;
+    opacity: 70%;
+    border-radius: 50%;
+    background-color: var(--secound-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.sliderCheck.active {
+    background-color: var(--text-color); /* Цвет выделения для активного элемента */
+    width: 9px;
+    height: 9px;
+    opacity: 100%;
+    transition: all 0.15s ease-in-out;
+}
+
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+}
+
+.sliderContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%; /* Увеличьте ширину для мобильных устройств */
+    max-width: 70%; /* Максимальная ширина для больших экранов */
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--secound-background-color);
+    margin: 0 auto;
+}
+
+.infoBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--secound-background-color);
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 10px 0px;
+    transition: all 0.15s ease-in-out;
+}
+
+.contentSlider {
+    display: flex;
+    flex-direction: column; /* Измените на колонку для мобильных устройств */
+    align-items: center; /* Центрировать элементы по горизонтали */
+}
+
+.contentWrapper {
+    display: flex; /* Используем flexbox для выравнивания */
+    align-items: flex-start; /* Выравниваем по верхнему краю */
+    justify-content: space-between; /* Распределяем пространство между элементами */
+    width: 100%;
+}
+
+.contentInfo {
+    flex: 1; /* Уменьшено для лучшего выравнивания */
+    margin-left: 50px; /* Отступ между контентом и информацией */
+}
+
+.infoTitle {
+    width: 100%; /* Используйте 100% ширины */
+    max-width: 300px; /* Максимальная ширина */
+    height: 30px;
+    border-radius: 7px 7px 0px 0px;
+    background-color: var(--background-color);
+}
+
+.infoText {
+    width: 100%; /* Используйте 100% ширины */
+    max-width: 300px; /* Максимальная ширина */
+    height: 100px;
+    border-radius: 0px 0px 7px 7px;
+    background-color: var(--dark-background-color);
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    .sliderContentItem {
+        width: 90%; /* Ширина для планшетов и мобильных устройств */
+    }
+    
+    .infoTitle, .infoText {
+        width: 90%; /* Ширина для планшетов и мобильных устройств */
+    }
+
+    .contentWrapper {
+        flex-direction: row; /* Измените на строку для мобильных устройств */
+        align-items: flex-start; /* Выравниваем по верхнему краю */
+    }
+
+    .testContent0, .testContent1, .testContent2 {
+        font-size: 0.9rem; /* Уменьшите размер шрифта для мобильных устройств */
+    }
+}
+
+@media (max-width: 480px) {
+    .sliderContentItem {
+        width: 95%; /* Ширина для мобильных устройств */
+    }
+    
+    .infoTitle, .infoText {
+        width: 95%; /* Ширина для мобильных устройств */
+    }
+
+    .testContent0, .testContent1, .testContent2 {
+        font-size: 0.8rem; /* Уменьшите размер шрифта для мобильных устройств */
+    }
+}

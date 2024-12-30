@@ -1,5 +1,5 @@
 import '../styles/NavButton.css'
-import '../styles/Colors.css'
+import '../styles/Vars.css'
 export default function NavButton({ text, href }) {
     const handleClick = (event) => {
         document.querySelectorAll('.navButton').forEach(button => button.classList.remove('active'));
