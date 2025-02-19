@@ -26,9 +26,6 @@ function App() {
         <p>{data['text-blocks'][0].text}</p>
       </TextBlock>
       <ContentSlider>
-        <div className='testContent0'> FIRST </div>
-        <div className='testContent1'> SECOND </div>
-        <div className='testContent2'> THIRD </div>
       </ContentSlider>
     </div>
   );
